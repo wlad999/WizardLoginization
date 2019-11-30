@@ -1,0 +1,107 @@
+.invisible {
+    opacity: 0;
+}
+
+.pageWrapper {
+    width: 100%;
+    text-align: center;
+    background: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginWrapper {
+    width: 70%;
+    text-align: center;
+    padding-top: 55px;
+}
+
+.loginWrapper input {
+    outline: none;
+    padding-left: 5px;
+}
+
+.inputModule {
+    text-align: start;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 35px;
+}
+
+.input {
+    font-size: 15px;
+    height: 50px;
+    width: 270px;
+    text-align: center;
+    vertical-align: bottom;
+    border: none;
+    border-bottom: 1px solid grey;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-weight: 700;
+    background: transparent;
+    color: #555555;
+}
+
+.error {
+    padding-top: 10px;
+    color: red;
+    min-height: 60px;
+    font-family: "Lato", AdobeInvisFont, Tahoma, MyriadPro-Regular, sans-serif;
+    font-weight: 700;
+
+}
+
+.button {
+    margin-top: 20px;
+    height: 40px;
+    width: 175px;
+    border-radius: 20px;
+    color: white;
+    background: rgb(252, 132, 44);
+    font-size: 14px;
+    box-shadow: 0 5px 10px rgb(252, 132, 44);
+    border: none;
+    font-family: "Lato", AdobeInvisFont, Tahoma, MyriadPro-Regular, sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.button:focus {
+    outline: none;
+}
+
+
+
+@media(min-width: 767px) {
+    .pageWrapper {
+        align-items: flex-start;
+    }
+
+    .loginWrapper {
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        padding-left: 90px;
+    }
+
+    .inputModule {
+        text-align: start;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .input {
+        text-align: start;
+        vertical-align: bottom;
+        border: none;
+        border-bottom: 1px solid grey;
+        margin-top: 20px;
+        background: none;
+        align-items: flex-start;
+    }
+
+}
