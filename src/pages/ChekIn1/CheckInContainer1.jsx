@@ -19,9 +19,9 @@ class CheckInContainer1 extends React.Component {
       error: ""
     });
   };
-  redirectUser = () => {
-    this.props.history.push("/");
-  };
+  // redirectUser = () => {
+  //   this.props.history.push("/");
+  // };
   handleRegister = e => {
     e.preventDefault();
 
@@ -38,7 +38,8 @@ class CheckInContainer1 extends React.Component {
 
     let dataUserStep1 = {
       email: email,
-      password: password
+      password: password,
+      step: 2
     };
 
     this.props.setUserData(dataUserStep1);

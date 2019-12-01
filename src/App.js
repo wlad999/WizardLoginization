@@ -4,11 +4,13 @@ import CheckInContainer1 from "./pages/ChekIn1/CheckInContainer1";
 import CheckInContainer2 from "./pages/ChekIn2/CheckInContainer2";
 import CheckInContainer3 from "./pages/ChekIn3/CheckInContainer3";
 import Success from "./pages/Success/Success";
+import Scheme from './components/Scheme/Scheme'
 import { Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="app-wrapper">
+      <Scheme/>
       <div>
         <Route
           exact

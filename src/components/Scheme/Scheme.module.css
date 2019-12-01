@@ -1,0 +1,79 @@
+* {
+    outline: 1px solid red;
+}
+
+.wrapper {
+    /* text-align: center;
+    margin: auto; */
+}
+
+.box {
+    width: 600px;
+    height: 20px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+
+.line {
+    height: 3px;
+    width: 200px;
+    background-color: brown;
+}
+
+.point1 {
+    position: absolute;
+    border-radius: 50%;
+    /* width: 20px;
+    height: 20px;
+    border: 7px solid green; */
+    transform: translate(-50%, -50%);
+}
+
+.point2 {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 7px solid green;
+    transform: translate(-50%, -50%);
+    left: 200px
+}
+
+.point3 {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 7px solid green;
+    transform: translate(-50%, -50%);
+    left: 400px
+}
+
+.point4 {
+    position: absolute;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    border: 7px solid green;
+    transform: translate(-50%, -50%);
+    left: 600px
+}
+
+.currentPoint {
+    width: 20px;
+    height: 20px;
+    border: 7px solid red;
+}
+
+.pastPoint {
+    width: 20px;
+    height: 20px;
+    border: 7px solid green;
+}
+
+.futurePoint {
+    width: 20px;
+    height: 20px;
+    border: 7px solid blue;
+}

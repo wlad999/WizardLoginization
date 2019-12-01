@@ -36,7 +36,8 @@ class CheckInContainer3 extends React.Component {
     let dataUserStep3 = {
       category1: category1,
       category2: category2,
-      category3: category3
+      category3: category3,
+      step: "Success"
     };
 
     this.props.setUserData(dataUserStep3);

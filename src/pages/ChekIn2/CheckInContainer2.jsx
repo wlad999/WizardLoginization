@@ -37,7 +37,8 @@ class CheckInContainer2 extends React.Component {
     let dataUserStep2 = {
       country: country,
       city: city,
-      adress: adress
+      adress: adress,
+      step: 3
     };
 
     this.props.setUserData(dataUserStep2);
