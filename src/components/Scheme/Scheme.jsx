@@ -5,24 +5,54 @@ import styles from "./Scheme.module.css";
 
 class Scheme extends React.Component {
   render() {
+    const { step } = this.props;
     const point1StyleArr = [styles.point1];
-    if (this.props.step === 1) {
+    if (step === 1) {
       point1StyleArr.push(styles.currentPoint);
-    } else {
-      point1StyleArr.push(styles.pastPoinst);
+    } else if (step > 1) {
+      point1StyleArr.push(styles.pastPoint);
     }
-    const point1Style = point1StyleArr.join(" ")
+    const point1Style = point1StyleArr.join(" ");
+
+    const point2StyleArr = [styles.point2];
+    if (step < 2) {
+      point2StyleArr.push(styles.futurePoint);
+    } else if (step === 2) {
+      point2StyleArr.push(styles.currentPoint);
+    } else if (step > 2) {
+      point2StyleArr.push(styles.pastPoint);
+    }
+    const point2Style = point2StyleArr.join(" ");
+
+    const point3StyleArr = [styles.point3];
+    if (step < 3) {
+      point3StyleArr.push(styles.futurePoint);
+    } else if (step === 3) {
+      point3StyleArr.push(styles.currentPoint);
+    } else if (step > 3) {
+      point3StyleArr.push(styles.pastPoint);
+    }
+    const point3Style = point3StyleArr.join(" ");
+
+    const point4StyleArr = [styles.point4];
+    if (step < 4) {
+      point4StyleArr.push(styles.futurePoint);
+    } else if (step === 4) {
+      point4StyleArr.push(styles.currentPoint);
+    }
+    const point4Style = point4StyleArr.join(" ");
+
     return (
       <div className={styles.wrapper}>
         <h2>Scheme</h2>
         <div className={styles.box}>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
-          <div className={styles.line}></div>
-          <div className={[styles.point1, styles.currentPoint].join(" ")}></div>
-          <div className={[styles.point2, styles.futurePoint].join(" ")}></div>
-          <div className={[styles.point3, styles.futurePoint].join(" ")}></div>
-          <div className={[styles.point4, styles.futurePoint].join(" ")}></div>
+          <div className={step > 1 ? styles.pastLine : styles.line}></div>
+          <div className={step > 2 ? styles.pastLine : styles.line}></div>
+          <div className={step > 3 ? styles.pastLine : styles.line}></div>
+          <div className={point1Style}></div>
+          <div className={point2Style}></div>
+          <div className={point3Style}></div>
+          <div className={point4Style}></div>
         </div>
       </div>
     );
