@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/WizardLoginization/static/css/main.ffa040fa.chunk.css",
+    "main.js": "/WizardLoginization/static/js/main.d9c92b09.chunk.js",
+    "main.js.map": "/WizardLoginization/static/js/main.d9c92b09.chunk.js.map",
+    "runtime~main.js": "/WizardLoginization/static/js/runtime~main.a2392525.js",
+    "runtime~main.js.map": "/WizardLoginization/static/js/runtime~main.a2392525.js.map",
+    "static/js/2.56a8de8a.chunk.js": "/WizardLoginization/static/js/2.56a8de8a.chunk.js",
+    "static/js/2.56a8de8a.chunk.js.map": "/WizardLoginization/static/js/2.56a8de8a.chunk.js.map",
+    "index.html": "/WizardLoginization/index.html",
+    "precache-manifest.4c775530b34e330a7425ed197abcfe59.js": "/WizardLoginization/precache-manifest.4c775530b34e330a7425ed197abcfe59.js",
+    "service-worker.js": "/WizardLoginization/service-worker.js",
+    "static/css/main.ffa040fa.chunk.css.map": "/WizardLoginization/static/css/main.ffa040fa.chunk.css.map"
+  }
+}
