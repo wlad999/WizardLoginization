@@ -12,7 +12,7 @@ const Success = () => {
         <p className={styles.mail}>Have questions?</p>
 
         <p className={styles.mail}>
-          Contact <a href="#">info@site.com</a>
+          Contact <a href="/">info@site.com</a>
         </p>
       </div>
     </>

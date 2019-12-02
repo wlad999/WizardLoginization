@@ -40,7 +40,6 @@ class CheckInContainer1 extends React.Component {
     };
 
     this.props.setUserData(dataUserStep1);
-    console.log("STORE", this.props.checkInPage);
     this.props.history.push("/step2");
   };
 
