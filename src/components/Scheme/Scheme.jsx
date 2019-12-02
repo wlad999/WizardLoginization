@@ -6,6 +6,7 @@ import styles from "./Scheme.module.css";
 class Scheme extends React.Component {
   render() {
     const { step } = this.props;
+
     const point1StyleArr = [styles.point1];
     if (step === 1) {
       point1StyleArr.push(styles.currentPoint);
@@ -44,7 +45,6 @@ class Scheme extends React.Component {
 
     return (
       <div className={styles.wrapper}>
-        <h2>Scheme</h2>
         <div className={styles.box}>
           <div className={step > 1 ? styles.pastLine : styles.line}></div>
           <div className={step > 2 ? styles.pastLine : styles.line}></div>
@@ -53,6 +53,12 @@ class Scheme extends React.Component {
           <div className={point2Style}></div>
           <div className={point3Style}></div>
           <div className={point4Style}></div>
+        </div>
+        <div className={styles.infoWay}>
+          <p className={styles.note}>CONTACTS</p>
+          <p className={styles.note}>ADDRESS</p>
+          <p className={styles.note}>CATEGORIES</p>
+          <p className={styles.note}>SUCCESS</p>
         </div>
       </div>
     );

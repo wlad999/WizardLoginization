@@ -87,3 +87,16 @@
     background-color: #cfc4ba;
 
 }
+
+.infoWay {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 645px;
+}
+
+.note {
+    color: #c17a33;
+    font-size: 12px;
+    font-weight: 700;
+}

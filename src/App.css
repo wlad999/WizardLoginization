@@ -11,6 +11,9 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
 }
 
 .app-wrapper-content {
@@ -18,4 +21,77 @@
   height: 540px;
   background-color: white;
   border-radius: 15px;
+  padding-top: 80px;
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+}
+
+.yellow {
+  height: 650px;
+  width: 650px;
+  background-color: #fedb89;
+  position: absolute;
+  transform: rotate(45deg);
+
+}
+
+.red {
+  height: 300px;
+  width: 300px;
+  background-color: #fe9fb7;
+  opacity: 0.5;
+  left: 430px;
+  top: 370px;
+  position: absolute;
+}
+
+.green {
+  height: 300px;
+  width: 300px;
+  background-color: #89d188;
+  opacity: 0.5;
+  top: -20px;
+  left: -80px;
+  position: absolute;
+}
+
+.yellowLeft {
+  height: 260px;
+  width: 260px;
+  background-color: #fedb89;
+  position: absolute;
+  transform: rotate(45deg);
+  left: -140px;
+  top: 210px;
+}
+
+.redLeft {
+  height: 120px;
+  width: 120px;
+  background-color: #fe9fb7;
+  opacity: 0.5;
+  left: 150px;
+  top: -35px;
+  position: absolute;
+}
+
+.yellowRight {
+  height: 280px;
+  width: 280px;
+  background-color: #fedb89;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 565px;
+  top: 390px;
+}
+
+.greenRight {
+  height: 120px;
+  width: 120px;
+  background-color: #89d188;
+  opacity: 0.5;
+  position: absolute;
+  left: -35px;
+  top: -11px;
 }

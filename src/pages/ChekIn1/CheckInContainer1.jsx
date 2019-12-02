@@ -19,9 +19,6 @@ class CheckInContainer1 extends React.Component {
       error: ""
     });
   };
-  // redirectUser = () => {
-  //   this.props.history.push("/");
-  // };
   handleRegister = e => {
     e.preventDefault();
 

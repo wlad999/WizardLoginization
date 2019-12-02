@@ -15,7 +15,6 @@ const CheckInForm2 = props => {
           name="country"
           id="country"
           onChange={handleInputs}
-          placeholder="Country *"
           className={styles.input}
           value={country}
         />
@@ -27,26 +26,22 @@ const CheckInForm2 = props => {
           name="city"
           id="passcityord"
           onChange={handleInputs}
-          placeholder="City *"
           className={styles.input}
           value={city}
         />
         <label htmlFor="password" className={styles.invisible}>
-          Adress
+          Address
         </label>
         <input
           type="text"
           name="adress"
           id="adress"
           onChange={handleInputs}
-          placeholder="Adress *"
           className={styles.input}
           value={adress}
         />
       </div>
-      <div className={styles.error}>
-        <p>{state.error}</p>
-      </div>
+      <p className={styles.error}>{state.error}</p>
       <button onClick={handleRegister} className={styles.button}>
         NEXT
       </button>

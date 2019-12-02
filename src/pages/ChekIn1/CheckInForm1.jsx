@@ -15,7 +15,6 @@ const CheckInForm1 = props => {
           name="email"
           id="email"
           onChange={handleInputs}
-          placeholder="Email *"
           className={styles.input}
           value={email}
         />
@@ -27,26 +26,22 @@ const CheckInForm1 = props => {
           name="password"
           id="password"
           onChange={handleInputs}
-          placeholder="Password *"
           className={styles.input}
           value={password}
         />
         <label htmlFor="password" className={styles.invisible}>
-          PasswordConfim
+          Password confim
         </label>
         <input
           type="password"
           name="passwordConfim"
           id="passwordConfim"
           onChange={handleInputs}
-          placeholder="Password confim *"
           className={styles.input}
           value={passwordConfim}
         />
       </div>
-      <div className={styles.error}>
-        <p>{state.error}</p>
-      </div>
+      <p className={styles.error}>{state.error}</p>
       <button onClick={handleRegister} className={styles.button}>
         NEXT
       </button>

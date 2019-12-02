@@ -1,0 +1,21 @@
+.head {
+    color: #c17a33;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.info {
+    margin: 3px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.mailBox {
+    padding-top: 20px;
+}
+
+.mail {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+}

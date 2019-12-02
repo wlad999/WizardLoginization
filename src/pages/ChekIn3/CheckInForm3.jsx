@@ -7,40 +7,35 @@ const CheckInForm3 = props => {
   return (
     <form>
       <div className={styles.inputModule}>
-        <label className={styles.invisible}>Category1</label>
+        <label className={styles.invisible}>Category 1</label>
         <input
           type="text"
           name="category1"
           id="category1"
           onChange={handleInputs}
-          placeholder="Category1 *"
           className={styles.input}
           value={category1}
         />
-        <label className={styles.invisible}>City</label>
+        <label className={styles.invisible}>Category 2</label>
         <input
           type="text"
           name="category2"
           id="category2"
           onChange={handleInputs}
-          placeholder="Category2 *"
           className={styles.input}
           value={category2}
         />
-        <label className={styles.invisible}>Adress</label>
+        <label className={styles.invisible}>Category 3</label>
         <input
           type="text"
           name="category3"
           id="category3"
           onChange={handleInputs}
-          placeholder="Category3 *"
           className={styles.input}
           value={category3}
         />
       </div>
-      <div className={styles.error}>
-        <p>{state.error}</p>
-      </div>
+      <p>{state.error}</p>
       <button onClick={handleRegister} className={styles.button}>
         NEXT
       </button>

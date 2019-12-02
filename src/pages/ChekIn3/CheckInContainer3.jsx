@@ -4,6 +4,8 @@ import styles from "./CheckInForm3.module.css";
 import CheckInForm3 from "./CheckInForm3";
 import { checkInPage } from "../../redux/selectors/checkInSelectots";
 import { setUserData } from "../../redux/action/checkInAction";
+import {withAuthRedirect} from "../../components/hoc/withAuthRedirect";
+import { compose } from "redux";
 
 class CheckInContainer3 extends React.Component {
   state = {
@@ -65,4 +67,7 @@ let MSTP = state => ({
   checkInPage: checkInPage(state)
 });
 
-export default connect(MSTP, { setUserData })(CheckInContainer3);
+export default compose(
+  connect(MSTP, { setUserData }),
+  withAuthRedirect
+)(CheckInContainer3);

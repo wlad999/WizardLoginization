@@ -4,6 +4,8 @@ import styles from "./CheckInForm2.module.css";
 import CheckInForm2 from "./CheckInForm2";
 import { checkInPage } from "../../redux/selectors/checkInSelectots";
 import { setUserData } from "../../redux/action/checkInAction";
+import { withAuthRedirect } from "../../components/hoc/withAuthRedirect";
+import { compose } from "redux";
 
 class CheckInContainer2 extends React.Component {
   state = {
@@ -19,14 +21,10 @@ class CheckInContainer2 extends React.Component {
       error: ""
     });
   };
-  // redirectUser = () => {
-  //   this.props.history.push("/step2");
-  // };
+
   handleRegister = e => {
     e.preventDefault();
-
     const { country, city, adress } = this.state;
-
     if (!country || !city || !adress) {
       this.setState({
         error: "All fields must be complete"
@@ -66,4 +64,7 @@ let MSTP = state => ({
   checkInPage: checkInPage(state)
 });
 
-export default connect(MSTP, { setUserData })(CheckInContainer2);
+export default compose(
+  connect(MSTP, { setUserData }),
+  withAuthRedirect
+)(CheckInContainer2);
